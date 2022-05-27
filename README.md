@@ -1,6 +1,6 @@
 # Chertila.hub
 Code for load: ```
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Savaksp/Chertila.hub/main/modded_lua.lua"))()```
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AlexR32/Roblox/main/BracketV3.lua"))()```
 
 Hello!
 That's my first **public** script.
