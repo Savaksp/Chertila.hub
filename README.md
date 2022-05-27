@@ -10,5 +10,5 @@ Functions:
   - Color
   - Transparency
 
-Working on auto farm.
+Working on visuals.
 Library: [Link](https://github.com/AlexR32/Roblox/blob/main/BracketV3.lua)
