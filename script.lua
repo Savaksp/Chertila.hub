@@ -11,7 +11,7 @@ local Config = {
     WEIGHT = 1,
 
     Chams_bool = false,
-    Chams_color = Color3.new(255,255,255),
+    Chams_color = Color3.new(255,0,0),
     Chams_transp = 0
 }
 
