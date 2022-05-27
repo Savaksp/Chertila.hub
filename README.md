@@ -1,5 +1,7 @@
 # Chertila.hub
-Code for load: <loadstring(game:HttpGet("https://raw.githubusercontent.com/Savaksp/Chertila.hub/script.lua"))()>
+Code for load: ```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Savaksp/Chertila.hub/script.lua"))()```
+
 Hello!
 That's my first **public** script.
 Functions:
