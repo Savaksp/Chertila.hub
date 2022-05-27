@@ -616,7 +616,7 @@ function Library:CreateWindow(Config, Parent)
 				function DropdownInit:GetOption()
 					return Dropdown.Container.Value.Text
 				end
-                function DropdownInit:SetOptionsList(List)
+                function DropdownInit:SetOptionsList(List, Callback)
                     for _,OptionName in pairs(List) do
                         local Option = Folder.Option:Clone()
                         Option.Name = OptionName
@@ -627,6 +627,23 @@ function Library:CreateWindow(Config, Parent)
                         Option.Size = UDim2.new(1,0,0,Option.Title.TextBounds.Y + 5)
                         Dropdown.Container.Holder.Size = UDim2.new(1,-5,0,Dropdown.Container.Holder.Container.ListLayout.AbsoluteContentSize.Y)
                         table.insert(Library.ColorTable, Option)
+						
+						Option.MouseButton1Down:Connect(function()
+							Option.BackgroundTransparency = 0
+						end)
+
+						Option.MouseButton1Up:Connect(function()
+							Option.BackgroundTransparency = 1
+						end)
+
+						Option.MouseLeave:Connect(function()
+							Option.BackgroundTransparency = 1
+						end)
+
+						Option.MouseButton1Click:Connect(function()
+							Dropdown.Container.Value.Text = OptionName
+							Callback(OptionName)
+						end)
                     end
                 end
 				function DropdownInit:SetOption(Name)
