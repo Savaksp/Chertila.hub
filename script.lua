@@ -40,7 +40,7 @@ end)
 local Teleport_BTN = Teleport_SEC:CreateButton('Teleport', function()
     local player = game:GetService('Players')[Config['Player_SEL']]
     if Config['Player_SEL'] ~= nil then
-        game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = player.Character.CFrame
+        game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = player.Character.HumanoidRootPart.CFrame
     end
 end)
 local UpdatePlayers_BTN = Teleport_SEC:CreateButton('Update players', function()
