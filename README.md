@@ -6,9 +6,12 @@ Hello!
 That's my first **public** script.
 Functions:
 
-+ Chams ESP
-  - Color
-  - Transparency
+- Visuals
+  + Chams ESP
+    - Color
+    - Transparency
+- Player
+  + Teleport
 
 Working on visuals.
 Library: [Link](https://github.com/AlexR32/Roblox/blob/main/BracketV3.lua)
