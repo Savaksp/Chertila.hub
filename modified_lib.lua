@@ -436,7 +436,7 @@ function Library:CreateWindow(Config, Parent)
 				return ToggleInit
 			end
 			function SectionInit:CreateSlider(Name, Min, Max, Default, Precise, Callback)
-				local DefaultLocal = Default or 50
+				local DefaultLocal = Default or 1
 				local SliderInit = {}
 				local Slider = Folder.Slider:Clone()
 				Slider.Name = Name .. " S"
